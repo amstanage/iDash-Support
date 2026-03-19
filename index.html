@@ -1,180 +1,158 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <meta http-equiv="Content-Style-Type" content="text/css">
-  <title></title>
-  <meta name="Generator" content="Cocoa HTML Writer">
-  <meta name="CocoaVersion" content="2685.4">
-  <style type="text/css">
-    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Menlo; color: #fc5fa3; background-color: #1f1f24}
-    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Menlo; color: #fc6a5d; background-color: #1f1f24}
-    p.p3 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Menlo; color: #ffffff; color: rgba(255, 255, 255, 0.85); background-color: #1f1f24}
-    p.p4 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Menlo; color: #ffffff; color: rgba(255, 255, 255, 0.85); background-color: #1f1f24; min-height: 14.0px}
-    p.p5 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Menlo; color: #41a1c0; background-color: #1f1f24}
-    p.p6 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Menlo; color: #5482ff; background-color: #1f1f24}
-    span.s1 {color: #bf8555}
-    span.s2 {color: #fc6a5d}
-    span.s3 {color: rgba(255, 255, 255, 0.85)}
-    span.s4 {color: #fc5fa3}
-    span.s5 {color: #d0bf69}
-    span.s6 {color: #41a1c0}
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iDash Support</title>
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+            background: #0A0E1A;
+            color: #FFFFFF;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 60px 24px 40px;
+        }
+
+        .icon {
+            width: 96px;
+            height: 96px;
+            background: linear-gradient(145deg, #1a1f35, #0d1120);
+            border-radius: 22px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 48px;
+            margin-bottom: 20px;
+            box-shadow: 0 8px 32px rgba(0,0,0,0.4);
+            border: 1px solid rgba(255,255,255,0.08);
+        }
+
+        h1 {
+            font-size: 32px;
+            font-weight: 700;
+            margin-bottom: 8px;
+            letter-spacing: -0.5px;
+        }
+
+        .tagline {
+            color: rgba(255,255,255,0.45);
+            font-size: 16px;
+            margin-bottom: 48px;
+        }
+
+        .card {
+            background: rgba(255,255,255,0.05);
+            border: 1px solid rgba(255,255,255,0.09);
+            border-radius: 18px;
+            padding: 28px 32px;
+            width: 100%;
+            max-width: 540px;
+            margin-bottom: 16px;
+        }
+
+        .card h2 {
+            font-size: 13px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            color: rgba(255,255,255,0.4);
+            margin-bottom: 16px;
+        }
+
+        .card p {
+            font-size: 15px;
+            line-height: 1.6;
+            color: rgba(255,255,255,0.75);
+        }
+
+        .card p + p {
+            margin-top: 10px;
+        }
+
+        .card p strong {
+            color: #FFFFFF;
+        }
+
+        .btn {
+            display: inline-block;
+            margin-top: 18px;
+            padding: 11px 22px;
+            border-radius: 10px;
+            font-size: 15px;
+            font-weight: 600;
+            text-decoration: none;
+            transition: opacity 0.15s;
+        }
+
+        .btn:hover { opacity: 0.8; }
+
+        .btn-primary {
+            background: #007AFF;
+            color: #fff;
+        }
+
+        .btn-secondary {
+            background: rgba(255,255,255,0.08);
+            color: rgba(255,255,255,0.8);
+            border: 1px solid rgba(255,255,255,0.12);
+            margin-left: 10px;
+        }
+
+        footer {
+            margin-top: 40px;
+            font-size: 13px;
+            color: rgba(255,255,255,0.25);
+            text-align: center;
+        }
+
+        footer a {
+            color: rgba(255,255,255,0.35);
+            text-decoration: none;
+        }
+
+        footer a:hover { color: rgba(255,255,255,0.6); }
+    </style>
 </head>
 <body>
-<p class="p1"><b>&lt;!DOCTYPE html&gt;</b><b></b></p>
-<p class="p1"><b>&lt;html </b><span class="s1">lang</span><b>=</b><span class="s2">"en"</span><b>&gt;</b><b></b></p>
-<p class="p1"><b>&lt;head&gt;</b><b></b></p>
-<p class="p1"><span class="s3"><span class="Apple-converted-space">  </span></span><b>&lt;meta </b><span class="s1">charset</span><b>=</b><span class="s2">"UTF-8"</span><b> /&gt;</b><b></b></p>
-<p class="p2"><span class="s3"><span class="Apple-converted-space">  </span></span><span class="s4"><b>&lt;meta </b></span><span class="s1">name</span><span class="s4"><b>=</b></span>"viewport"<span class="s4"><b> </b></span><span class="s1">content</span><span class="s4"><b>=</b></span>"width=device-width, initial-scale=1.0"<span class="s4"><b> /&gt;</b><b></b></span></p>
-<p class="p3"><span class="Apple-converted-space">  </span><span class="s4"><b>&lt;title&gt;</b></span>iDash Support<span class="s4"><b>&lt;/title&gt;</b><b></b></span></p>
-<p class="p1"><span class="s3"><span class="Apple-converted-space">  </span></span><b>&lt;style&gt;</b><b></b></p>
-<p class="p1"><span class="s3"><span class="Apple-converted-space">    </span>* { </span><b>box-sizing</b><span class="s3">: </span><b>border-box</b><span class="s3">; </span><b>margin</b><span class="s3">: </span><span class="s5">0</span><span class="s3">; </span><b>padding</b><span class="s3">: </span><span class="s5">0</span><span class="s3">; }</span></p>
-<p class="p4"><br></p>
-<p class="p3"><span class="Apple-converted-space">    </span><span class="s6">body</span> {</p>
-<p class="p3"><span class="Apple-converted-space">      </span><span class="s4"><b>font-family</b></span>: -apple-system, BlinkMacSystemFont, <span class="s2">"Segoe UI"</span>, <span class="s4"><b>sans-serif</b></span>;</p>
-<p class="p1"><span class="s3"><span class="Apple-converted-space">      </span></span><b>background</b><span class="s3">: </span><span class="s5">#0A0E1A</span><span class="s3">;</span></p>
-<p class="p3"><span class="Apple-converted-space">      </span><span class="s4"><b>color</b></span>: <span class="s5">#FFFFFF</span>;</p>
-<p class="p3"><span class="Apple-converted-space">      </span><span class="s4"><b>min-height</b></span>: <span class="s5">100</span>vh;</p>
-<p class="p3"><span class="Apple-converted-space">      </span><span class="s4"><b>display</b></span>: flex;</p>
-<p class="p3"><span class="Apple-converted-space">      </span>flex-direction: <span class="s4"><b>column</b></span>;</p>
-<p class="p3"><span class="Apple-converted-space">      </span>align-items: <span class="s4"><b>center</b></span>;</p>
-<p class="p1"><span class="s3"><span class="Apple-converted-space">      </span></span><b>padding</b><span class="s3">: </span><span class="s5">60</span><b>px</b><span class="s3"> </span><span class="s5">24</span><b>px</b><span class="s3"> </span><span class="s5">40</span><b>px</b><span class="s3">;</span></p>
-<p class="p3"><span class="Apple-converted-space">    </span>}</p>
-<p class="p4"><br></p>
-<p class="p3"><span class="Apple-converted-space">    </span><span class="s6">.icon</span> {</p>
-<p class="p3"><span class="Apple-converted-space">      </span><span class="s4"><b>width</b></span>: <span class="s5">96</span><span class="s4"><b>px</b></span>;</p>
-<p class="p3"><span class="Apple-converted-space">      </span><span class="s4"><b>height</b></span>: <span class="s5">96</span><span class="s4"><b>px</b></span>;</p>
-<p class="p3"><span class="Apple-converted-space">      </span><span class="s4"><b>background</b></span>: linear-gradient(<span class="s5">145</span><span class="s4"><b>deg</b></span>, <span class="s5">#1a1f35</span>, <span class="s5">#0d1120</span>);</p>
-<p class="p1"><span class="s3"><span class="Apple-converted-space">      </span></span><b>border-radius</b><span class="s3">: </span><span class="s5">22</span><b>px</b><span class="s3">;</span></p>
-<p class="p3"><span class="Apple-converted-space">      </span><span class="s4"><b>display</b></span>: flex;</p>
-<p class="p3"><span class="Apple-converted-space">      </span>align-items: <span class="s4"><b>center</b></span>;</p>
-<p class="p3"><span class="Apple-converted-space">      </span>justify-content: <span class="s4"><b>center</b></span>;</p>
-<p class="p1"><span class="s3"><span class="Apple-converted-space">      </span></span><b>font-size</b><span class="s3">: </span><span class="s5">48</span><b>px</b><span class="s3">;</span></p>
-<p class="p1"><span class="s3"><span class="Apple-converted-space">      </span></span><b>margin-bottom</b><span class="s3">: </span><span class="s5">20</span><b>px</b><span class="s3">;</span></p>
-<p class="p1"><span class="s3"><span class="Apple-converted-space">      </span></span><b>box-shadow</b><span class="s3">: </span><span class="s5">0</span><span class="s3"> </span><span class="s5">8</span><b>px</b><span class="s3"> </span><span class="s5">32</span><b>px</b><span class="s3"> </span><b>rgba</b><span class="s3">(</span><span class="s5">0</span><span class="s3">,</span><span class="s5">0</span><span class="s3">,</span><span class="s5">0</span><span class="s3">,</span><span class="s5">0.4</span><span class="s3">);</span></p>
-<p class="p1"><span class="s3"><span class="Apple-converted-space">      </span></span><b>border</b><span class="s3">: </span><span class="s5">1</span><b>px</b><span class="s3"> </span><b>solid</b><span class="s3"> </span><b>rgba</b><span class="s3">(</span><span class="s5">255</span><span class="s3">,</span><span class="s5">255</span><span class="s3">,</span><span class="s5">255</span><span class="s3">,</span><span class="s5">0.08</span><span class="s3">);</span></p>
-<p class="p3"><span class="Apple-converted-space">    </span>}</p>
-<p class="p4"><br></p>
-<p class="p3"><span class="Apple-converted-space">    </span><span class="s6">h1</span> {</p>
-<p class="p1"><span class="s3"><span class="Apple-converted-space">      </span></span><b>font-size</b><span class="s3">: </span><span class="s5">32</span><b>px</b><span class="s3">;</span></p>
-<p class="p1"><span class="s3"><span class="Apple-converted-space">      </span></span><b>font-weight</b><span class="s3">: </span><span class="s5">700</span><span class="s3">;</span></p>
-<p class="p1"><span class="s3"><span class="Apple-converted-space">      </span></span><b>margin-bottom</b><span class="s3">: </span><span class="s5">8</span><b>px</b><span class="s3">;</span></p>
-<p class="p1"><span class="s3"><span class="Apple-converted-space">      </span></span><b>letter-spacing</b><span class="s3">: </span><span class="s5">-0.5</span><b>px</b><span class="s3">;</span></p>
-<p class="p3"><span class="Apple-converted-space">    </span>}</p>
-<p class="p4"><br></p>
-<p class="p5"><span class="s3"><span class="Apple-converted-space">    </span></span>.tagline<span class="s3"> {</span></p>
-<p class="p3"><span class="Apple-converted-space">      </span><span class="s4"><b>color</b></span>: <span class="s4"><b>rgba</b></span>(<span class="s5">255</span>,<span class="s5">255</span>,<span class="s5">255</span>,<span class="s5">0.45</span>);</p>
-<p class="p1"><span class="s3"><span class="Apple-converted-space">      </span></span><b>font-size</b><span class="s3">: </span><span class="s5">16</span><b>px</b><span class="s3">;</span></p>
-<p class="p1"><span class="s3"><span class="Apple-converted-space">      </span></span><b>margin-bottom</b><span class="s3">: </span><span class="s5">48</span><b>px</b><span class="s3">;</span></p>
-<p class="p3"><span class="Apple-converted-space">    </span>}</p>
-<p class="p4"><br></p>
-<p class="p3"><span class="Apple-converted-space">    </span><span class="s6">.card</span> {</p>
-<p class="p3"><span class="Apple-converted-space">      </span><span class="s4"><b>background</b></span>: <span class="s4"><b>rgba</b></span>(<span class="s5">255</span>,<span class="s5">255</span>,<span class="s5">255</span>,<span class="s5">0.05</span>);</p>
-<p class="p1"><span class="s3"><span class="Apple-converted-space">      </span></span><b>border</b><span class="s3">: </span><span class="s5">1</span><b>px</b><span class="s3"> </span><b>solid</b><span class="s3"> </span><b>rgba</b><span class="s3">(</span><span class="s5">255</span><span class="s3">,</span><span class="s5">255</span><span class="s3">,</span><span class="s5">255</span><span class="s3">,</span><span class="s5">0.09</span><span class="s3">);</span></p>
-<p class="p1"><span class="s3"><span class="Apple-converted-space">      </span></span><b>border-radius</b><span class="s3">: </span><span class="s5">18</span><b>px</b><span class="s3">;</span></p>
-<p class="p1"><span class="s3"><span class="Apple-converted-space">      </span></span><b>padding</b><span class="s3">: </span><span class="s5">28</span><b>px</b><span class="s3"> </span><span class="s5">32</span><b>px</b><span class="s3">;</span></p>
-<p class="p3"><span class="Apple-converted-space">      </span><span class="s4"><b>width</b></span>: <span class="s5">100%</span>;</p>
-<p class="p1"><span class="s3"><span class="Apple-converted-space">      </span></span><b>max-width</b><span class="s3">: </span><span class="s5">540</span><b>px</b><span class="s3">;</span></p>
-<p class="p1"><span class="s3"><span class="Apple-converted-space">      </span></span><b>margin-bottom</b><span class="s3">: </span><span class="s5">16</span><b>px</b><span class="s3">;</span></p>
-<p class="p3"><span class="Apple-converted-space">    </span>}</p>
-<p class="p4"><br></p>
-<p class="p3"><span class="Apple-converted-space">    </span><span class="s6">.card</span> <span class="s6">h2</span> {</p>
-<p class="p1"><span class="s3"><span class="Apple-converted-space">      </span></span><b>font-size</b><span class="s3">: </span><span class="s5">13</span><b>px</b><span class="s3">;</span></p>
-<p class="p1"><span class="s3"><span class="Apple-converted-space">      </span></span><b>font-weight</b><span class="s3">: </span><span class="s5">600</span><span class="s3">;</span></p>
-<p class="p1"><span class="s3"><span class="Apple-converted-space">      </span></span><b>text-transform</b><span class="s3">: </span><b>uppercase</b><span class="s3">;</span></p>
-<p class="p1"><span class="s3"><span class="Apple-converted-space">      </span></span><b>letter-spacing</b><span class="s3">: </span><span class="s5">1.5</span><b>px</b><span class="s3">;</span></p>
-<p class="p3"><span class="Apple-converted-space">      </span><span class="s4"><b>color</b></span>: <span class="s4"><b>rgba</b></span>(<span class="s5">255</span>,<span class="s5">255</span>,<span class="s5">255</span>,<span class="s5">0.4</span>);</p>
-<p class="p1"><span class="s3"><span class="Apple-converted-space">      </span></span><b>margin-bottom</b><span class="s3">: </span><span class="s5">16</span><b>px</b><span class="s3">;</span></p>
-<p class="p3"><span class="Apple-converted-space">    </span>}</p>
-<p class="p4"><br></p>
-<p class="p3"><span class="Apple-converted-space">    </span><span class="s6">.card</span> <span class="s6">p</span> {</p>
-<p class="p1"><span class="s3"><span class="Apple-converted-space">      </span></span><b>font-size</b><span class="s3">: </span><span class="s5">15</span><b>px</b><span class="s3">;</span></p>
-<p class="p1"><span class="s3"><span class="Apple-converted-space">      </span></span><b>line-height</b><span class="s3">: </span><span class="s5">1.6</span><span class="s3">;</span></p>
-<p class="p3"><span class="Apple-converted-space">      </span><span class="s4"><b>color</b></span>: <span class="s4"><b>rgba</b></span>(<span class="s5">255</span>,<span class="s5">255</span>,<span class="s5">255</span>,<span class="s5">0.75</span>);</p>
-<p class="p3"><span class="Apple-converted-space">    </span>}</p>
-<p class="p4"><br></p>
-<p class="p3"><span class="Apple-converted-space">    </span><span class="s6">.card</span> <span class="s6">p</span> + p {</p>
-<p class="p1"><span class="s3"><span class="Apple-converted-space">      </span></span><b>margin-top</b><span class="s3">: </span><span class="s5">10</span><b>px</b><span class="s3">;</span></p>
-<p class="p3"><span class="Apple-converted-space">    </span>}</p>
-<p class="p4"><br></p>
-<p class="p3"><span class="Apple-converted-space">    </span><span class="s6">.btn</span> {</p>
-<p class="p1"><span class="s3"><span class="Apple-converted-space">      </span></span><b>display</b><span class="s3">: </span><b>inline-block</b><span class="s3">;</span></p>
-<p class="p1"><span class="s3"><span class="Apple-converted-space">      </span></span><b>margin-top</b><span class="s3">: </span><span class="s5">18</span><b>px</b><span class="s3">;</span></p>
-<p class="p1"><span class="s3"><span class="Apple-converted-space">      </span></span><b>padding</b><span class="s3">: </span><span class="s5">11</span><b>px</b><span class="s3"> </span><span class="s5">22</span><b>px</b><span class="s3">;</span></p>
-<p class="p1"><span class="s3"><span class="Apple-converted-space">      </span></span><b>border-radius</b><span class="s3">: </span><span class="s5">10</span><b>px</b><span class="s3">;</span></p>
-<p class="p1"><span class="s3"><span class="Apple-converted-space">      </span></span><b>font-size</b><span class="s3">: </span><span class="s5">15</span><b>px</b><span class="s3">;</span></p>
-<p class="p1"><span class="s3"><span class="Apple-converted-space">      </span></span><b>font-weight</b><span class="s3">: </span><span class="s5">600</span><span class="s3">;</span></p>
-<p class="p1"><span class="s3"><span class="Apple-converted-space">      </span></span><b>text-decoration</b><span class="s3">: </span><b>none</b><span class="s3">;</span></p>
-<p class="p3"><span class="Apple-converted-space">      </span>transition: <span class="s4"><b>opacity</b></span> <span class="s5">0.15</span><span class="s4"><b>s</b></span>;</p>
-<p class="p3"><span class="Apple-converted-space">    </span>}</p>
-<p class="p4"><br></p>
-<p class="p3"><span class="Apple-converted-space">    </span><span class="s6">.btn</span>:<span class="s4"><b>hover</b></span> { <span class="s4"><b>opacity</b></span>: <span class="s5">0.8</span>; }</p>
-<p class="p4"><br></p>
-<p class="p5"><span class="s3"><span class="Apple-converted-space">    </span></span>.btn-primary<span class="s3"> {</span></p>
-<p class="p1"><span class="s3"><span class="Apple-converted-space">      </span></span><b>background</b><span class="s3">: </span><span class="s5">#007AFF</span><span class="s3">;</span></p>
-<p class="p3"><span class="Apple-converted-space">      </span><span class="s4"><b>color</b></span>: <span class="s5">#fff</span>;</p>
-<p class="p3"><span class="Apple-converted-space">    </span>}</p>
-<p class="p4"><br></p>
-<p class="p5"><span class="s3"><span class="Apple-converted-space">    </span></span>.btn-secondary<span class="s3"> {</span></p>
-<p class="p3"><span class="Apple-converted-space">      </span><span class="s4"><b>background</b></span>: <span class="s4"><b>rgba</b></span>(<span class="s5">255</span>,<span class="s5">255</span>,<span class="s5">255</span>,<span class="s5">0.08</span>);</p>
-<p class="p3"><span class="Apple-converted-space">      </span><span class="s4"><b>color</b></span>: <span class="s4"><b>rgba</b></span>(<span class="s5">255</span>,<span class="s5">255</span>,<span class="s5">255</span>,<span class="s5">0.8</span>);</p>
-<p class="p1"><span class="s3"><span class="Apple-converted-space">      </span></span><b>border</b><span class="s3">: </span><span class="s5">1</span><b>px</b><span class="s3"> </span><b>solid</b><span class="s3"> </span><b>rgba</b><span class="s3">(</span><span class="s5">255</span><span class="s3">,</span><span class="s5">255</span><span class="s3">,</span><span class="s5">255</span><span class="s3">,</span><span class="s5">0.12</span><span class="s3">);</span></p>
-<p class="p1"><span class="s3"><span class="Apple-converted-space">      </span></span><b>margin-left</b><span class="s3">: </span><span class="s5">10</span><b>px</b><span class="s3">;</span></p>
-<p class="p3"><span class="Apple-converted-space">    </span>}</p>
-<p class="p4"><br></p>
-<p class="p3"><span class="Apple-converted-space">    </span><span class="s6">footer</span> {</p>
-<p class="p1"><span class="s3"><span class="Apple-converted-space">      </span></span><b>margin-top</b><span class="s3">: </span><span class="s5">40</span><b>px</b><span class="s3">;</span></p>
-<p class="p1"><span class="s3"><span class="Apple-converted-space">      </span></span><b>font-size</b><span class="s3">: </span><span class="s5">13</span><b>px</b><span class="s3">;</span></p>
-<p class="p3"><span class="Apple-converted-space">      </span><span class="s4"><b>color</b></span>: <span class="s4"><b>rgba</b></span>(<span class="s5">255</span>,<span class="s5">255</span>,<span class="s5">255</span>,<span class="s5">0.25</span>);</p>
-<p class="p1"><span class="s3"><span class="Apple-converted-space">      </span></span><b>text-align</b><span class="s3">: </span><b>center</b><span class="s3">;</span></p>
-<p class="p3"><span class="Apple-converted-space">    </span>}</p>
-<p class="p4"><br></p>
-<p class="p3"><span class="Apple-converted-space">    </span><span class="s6">footer</span> <span class="s6">a</span> {</p>
-<p class="p3"><span class="Apple-converted-space">      </span><span class="s4"><b>color</b></span>: <span class="s4"><b>rgba</b></span>(<span class="s5">255</span>,<span class="s5">255</span>,<span class="s5">255</span>,<span class="s5">0.35</span>);</p>
-<p class="p1"><span class="s3"><span class="Apple-converted-space">      </span></span><b>text-decoration</b><span class="s3">: </span><b>none</b><span class="s3">;</span></p>
-<p class="p3"><span class="Apple-converted-space">    </span>}</p>
-<p class="p4"><br></p>
-<p class="p3"><span class="Apple-converted-space">    </span><span class="s6">footer</span> <span class="s6">a</span>:<span class="s4"><b>hover</b></span> { <span class="s4"><b>color</b></span>: <span class="s4"><b>rgba</b></span>(<span class="s5">255</span>,<span class="s5">255</span>,<span class="s5">255</span>,<span class="s5">0.6</span>); }</p>
-<p class="p1"><span class="s3"><span class="Apple-converted-space">  </span></span><b>&lt;/style&gt;</b><b></b></p>
-<p class="p1"><b>&lt;/head&gt;</b><b></b></p>
-<p class="p1"><b>&lt;body&gt;</b><b></b></p>
-<p class="p4"><br></p>
-<p class="p1"><span class="s3"><span class="Apple-converted-space">  </span></span><b>&lt;div </b><span class="s1">class</span><b>=</b><span class="s2">"icon"</span><b>&gt;</b><span class="s3">🚗</span><b>&lt;/div&gt;</b><b></b></p>
-<p class="p3"><span class="Apple-converted-space">  </span><span class="s4"><b>&lt;h1&gt;</b></span>iDash Support<span class="s4"><b>&lt;/h1&gt;</b><b></b></span></p>
-<p class="p3"><span class="Apple-converted-space">  </span><span class="s4"><b>&lt;p </b></span><span class="s1">class</span><span class="s4"><b>=</b></span><span class="s2">"tagline"</span><span class="s4"><b>&gt;</b></span>GPS Dashboard <span class="s5">&amp;amp;</span> Trip Logger<span class="s4"><b>&lt;/p&gt;</b><b></b></span></p>
-<p class="p4"><br></p>
-<p class="p1"><span class="s3"><span class="Apple-converted-space">  </span></span><b>&lt;div </b><span class="s1">class</span><b>=</b><span class="s2">"card"</span><b>&gt;</b><b></b></p>
-<p class="p3"><span class="Apple-converted-space">    </span><span class="s4"><b>&lt;h2&gt;</b></span>Get Help<span class="s4"><b>&lt;/h2&gt;</b><b></b></span></p>
-<p class="p3"><span class="Apple-converted-space">    </span><span class="s4"><b>&lt;p&gt;</b></span>Found a bug or have a question? Open an issue on GitHub and I'll get back to you as soon as possible.<span class="s4"><b>&lt;/p&gt;</b><b></b></span></p>
-<p class="p3"><span class="Apple-converted-space">    </span><span class="s4"><b>&lt;p&gt;</b></span>You can also reach me directly by email for anything not suited to a public issue.<span class="s4"><b>&lt;/p&gt;</b><b></b></span></p>
-<p class="p6"><span class="s3"><span class="Apple-converted-space">    </span></span><span class="s4"><b>&lt;a </b></span><span class="s1">class</span><span class="s4"><b>=</b></span><span class="s2">"btn btn-primary"</span><span class="s4"><b> </b></span><span class="s1">href</span><span class="s4"><b>=</b></span><span class="s2">"</span>https://github.com/alexstanage/iDash/issues<span class="s2">"</span><span class="s4"><b> </b></span><span class="s1">target</span><span class="s4"><b>=</b></span><span class="s2">"_blank"</span><span class="s4"><b>&gt;</b></span><span class="s3">Open an Issue</span><span class="s4"><b>&lt;/a&gt;</b><b></b></span></p>
-<p class="p6"><span class="s3"><span class="Apple-converted-space">    </span></span><span class="s4"><b>&lt;a </b></span><span class="s1">class</span><span class="s4"><b>=</b></span><span class="s2">"btn btn-secondary"</span><span class="s4"><b> </b></span><span class="s1">href</span><span class="s4"><b>=</b></span><span class="s2">"</span>mailto:your@email.com<span class="s2">"</span><span class="s4"><b>&gt;</b></span><span class="s3">Email Support</span><span class="s4"><b>&lt;/a&gt;</b><b></b></span></p>
-<p class="p1"><span class="s3"><span class="Apple-converted-space">  </span></span><b>&lt;/div&gt;</b><b></b></p>
-<p class="p4"><br></p>
-<p class="p1"><span class="s3"><span class="Apple-converted-space">  </span></span><b>&lt;div </b><span class="s1">class</span><b>=</b><span class="s2">"card"</span><b>&gt;</b><b></b></p>
-<p class="p3"><span class="Apple-converted-space">    </span><span class="s4"><b>&lt;h2&gt;</b></span>Frequently Asked Questions<span class="s4"><b>&lt;/h2&gt;</b><b></b></span></p>
-<p class="p3"><span class="Apple-converted-space">    </span><span class="s4"><b>&lt;p&gt;&lt;strong&gt;</b></span>Why does speed show 0 when stationary?<span class="s4"><b>&lt;/strong&gt;&lt;br /&gt;</b><b></b></span></p>
-<p class="p3"><span class="Apple-converted-space">    </span>iDash uses GPS to measure speed. GPS speed readings require movement — this is normal behaviour.<span class="s4"><b>&lt;/p&gt;</b><b></b></span></p>
-<p class="p3"><span class="Apple-converted-space">    </span><span class="s4"><b>&lt;p&gt;&lt;strong&gt;</b></span>How do I export a trip?<span class="s4"><b>&lt;/strong&gt;&lt;br /&gt;</b><b></b></span></p>
-<p class="p3"><span class="Apple-converted-space">    </span>Open the Trips list from the menu, tap a trip, then tap Export. Choose GPX for mapping apps or CSV for spreadsheets.<span class="s4"><b>&lt;/p&gt;</b><b></b></span></p>
-<p class="p3"><span class="Apple-converted-space">    </span><span class="s4"><b>&lt;p&gt;&lt;strong&gt;</b></span>How do I change the theme?<span class="s4"><b>&lt;/strong&gt;&lt;br /&gt;</b><b></b></span></p>
-<p class="p3"><span class="Apple-converted-space">    </span>Swipe left or right on the dashboard to cycle through themes.<span class="s4"><b>&lt;/p&gt;</b><b></b></span></p>
-<p class="p3"><span class="Apple-converted-space">    </span><span class="s4"><b>&lt;p&gt;&lt;strong&gt;</b></span>Can I use iDash without a data connection?<span class="s4"><b>&lt;/strong&gt;&lt;br /&gt;</b><b></b></span></p>
-<p class="p3"><span class="Apple-converted-space">    </span>Yes — all gauges use on-device GPS. An internet connection is only needed for the map tiles and navigation search.<span class="s4"><b>&lt;/p&gt;</b><b></b></span></p>
-<p class="p1"><span class="s3"><span class="Apple-converted-space">  </span></span><b>&lt;/div&gt;</b><b></b></p>
-<p class="p4"><br></p>
-<p class="p1"><span class="s3"><span class="Apple-converted-space">  </span></span><b>&lt;div </b><span class="s1">class</span><b>=</b><span class="s2">"card"</span><b>&gt;</b><b></b></p>
-<p class="p3"><span class="Apple-converted-space">    </span><span class="s4"><b>&lt;h2&gt;</b></span>Privacy<span class="s4"><b>&lt;/h2&gt;</b><b></b></span></p>
-<p class="p3"><span class="Apple-converted-space">    </span><span class="s4"><b>&lt;p&gt;</b></span>iDash does not collect or transmit any personal data. All trip data is stored locally on your device and never leaves it unless you choose to export it.<span class="s4"><b>&lt;/p&gt;</b><b></b></span></p>
-<p class="p6"><span class="s3"><span class="Apple-converted-space">    </span></span><span class="s4"><b>&lt;a </b></span><span class="s1">class</span><span class="s4"><b>=</b></span><span class="s2">"btn btn-secondary"</span><span class="s4"><b> </b></span><span class="s1">href</span><span class="s4"><b>=</b></span><span class="s2">"</span>https://alexstanage.github.io/iDash-Privacy-Policy/<span class="s2">"</span><span class="s4"><b> </b></span><span class="s1">target</span><span class="s4"><b>=</b></span><span class="s2">"_blank"</span><span class="s4"><b>&gt;</b></span><span class="s3">Privacy Policy</span><span class="s4"><b>&lt;/a&gt;</b><b></b></span></p>
-<p class="p1"><span class="s3"><span class="Apple-converted-space">  </span></span><b>&lt;/div&gt;</b><b></b></p>
-<p class="p4"><br></p>
-<p class="p1"><span class="s3"><span class="Apple-converted-space">  </span></span><b>&lt;footer&gt;</b><b></b></p>
-<p class="p6"><span class="s3"><span class="Apple-converted-space">    </span></span><span class="s4"><b>&lt;p&gt;</b></span><span class="s5">&amp;copy;</span><span class="s3"> 2025 Alex Stanage </span><span class="s5">&amp;nbsp;</span><span class="s3">·</span><span class="s5">&amp;nbsp;</span><span class="s3"> </span><span class="s4"><b>&lt;a </b></span><span class="s1">href</span><span class="s4"><b>=</b></span><span class="s2">"</span>https://github.com/alexstanage/iDash<span class="s2">"</span><span class="s4"><b>&gt;</b></span><span class="s3">GitHub</span><span class="s4"><b>&lt;/a&gt;&lt;/p&gt;</b><b></b></span></p>
-<p class="p1"><span class="s3"><span class="Apple-converted-space">  </span></span><b>&lt;/footer&gt;</b><b></b></p>
-<p class="p4"><br></p>
-<p class="p1"><b>&lt;/body&gt;</b><b></b></p>
-<p class="p1"><b>&lt;/html&gt;</b><b></b></p>
+
+    <div class="icon">&#x1F697;</div>
+    <h1>iDash Support</h1>
+    <p class="tagline">GPS Dashboard &amp; Trip Logger</p>
+
+    <div class="card">
+        <h2>Get Help</h2>
+        <p>Found a bug or have a question? Open an issue on GitHub and I'll get back to you as soon as possible.</p>
+        <a class="btn btn-primary" href="https://github.com/amstanage/iDash-Support/issues" target="_blank">Open an Issue</a>
+    </div>
+
+    <div class="card">
+        <h2>Frequently Asked Questions</h2>
+        <p><strong>Why does speed show 0 when stationary?</strong><br>
+        iDash uses GPS to measure speed. GPS speed readings require movement &mdash; this is normal behaviour.</p>
+        <p><strong>How do I export a trip?</strong><br>
+        Open the Trips list from the menu, tap a trip, then tap Export. Choose GPX for mapping apps or CSV for spreadsheets.</p>
+        <p><strong>How do I change the theme?</strong><br>
+        Swipe left or right on the dashboard to cycle through themes.</p>
+        <p><strong>How do I change the gauge style?</strong><br>
+        Swipe up or down on the dashboard to cycle between Arc, Bar, Numeric, and Retro Needle styles.</p>
+        <p><strong>Can I use iDash without a data connection?</strong><br>
+        Yes &mdash; all gauges use on-device GPS. An internet connection is only needed for map tiles and navigation search.</p>
+    </div>
+
+    <div class="card">
+        <h2>Privacy</h2>
+        <p>iDash does not collect or transmit any personal data. All trip data is stored locally on your device and never leaves it unless you choose to export it.</p>
+        <a class="btn btn-secondary" href="https://amstanage.github.io/iDash-Privacy-Policy/" target="_blank">Privacy Policy</a>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Alex Stanage &nbsp;&middot;&nbsp; <a href="https://github.com/amstanage/iDash-Support">GitHub</a></p>
+    </footer>
+
 </body>
 </html>
